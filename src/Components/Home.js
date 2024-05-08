@@ -1,9 +1,9 @@
 import './Component.css';
 import avatar from '../Assets/1111.jpg';
-import badge from '../Assets/_______-removebg-pre.png';
+import badge from '../Assets/shtamp.png';
 import prog from '../Assets/Depositphotos_174531.jpg';
 import consultation from '../Assets/photo (1).jpg';
-import material from '../Assets/_-.jpg';
+import material from '../Assets/corn.jpg';
 
 const Home = () =>{
     return(

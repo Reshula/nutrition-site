@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Nutrition } from "./Nutrition";
 import Swal from 'sweetalert2';
 import './Nutrition.css'
-// import  LoaderPage  from './Loader/LoaderPage';
+import LoaderPage from '../Loader/LoaderPage';
 
 
 
@@ -15,11 +15,11 @@ const MY_KEY = '196b95d36fd654dc4afdf2ad74370b0c'
 const [mySearch, setMySearch] = useState ();
 const [wordSubmmited, setWordSubmmited] = useState('');
 const [myNutrition, setMyNutrition] = useState ();
-// const [stateLoader, setStateLoader] = useState(false);
+const [stateLoader, setStateLoader] = useState(false);
 
 
 const getNutrition = async (ingr) =>{
-//   setStateLoader(true);
+  setStateLoader(true);
   const response = await fetch(`https://api.edamam.com/api/nutrition-details?app_id=${MY_ID}&app_key=${MY_KEY}`,{
     method: 'POST',
     headers: {
@@ -33,13 +33,13 @@ const getNutrition = async (ingr) =>{
    
 
   if(response.ok) {
-    // setStateLoader(false);
+    setStateLoader(false);
     const data = await response.json();
     console.log(data)
     setMyNutrition(data);
   }
     else {
-    //   setStateLoader(false);
+      setStateLoader(false);
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -59,11 +59,11 @@ useEffect(() => {
 }, [wordSubmmited])
 
 
-// useEffect(() =>{
-// const timer = setTimeout (() =>setStateLoader(false), 3000);
-// return() => clearTimeout(timer)
+useEffect(() =>{
+const timer = setTimeout (() =>setStateLoader(false), 5000);
+return() => clearTimeout(timer)
 
-// }, [])
+}, [])
 
 const myRecipeSearch = e => {
   setMySearch(e.target.value);
@@ -74,32 +74,34 @@ const finalSearch = e => {
 }
   return (
     <div className="nutrition-container">
-      {/* {stateLoader && <LoaderPage />} */}
+      {stateLoader && <LoaderPage />}
      
       <div className='image-container'>
       <div className="centered">
-        <h1> Калькулятор калорий</h1>
+        <h1 className='title-nutrition'> Калькулятор калорий</h1>
       <form onSubmit={finalSearch}>
         <input
           placeholder="Выбери продукт..."
           onChange={myRecipeSearch}
+          className='input'
         />
-        <button type="submit">Начать</button>
+        <button className='nutrition-submit' type="submit">Начать</button>
       </form>
       </div>
       </div> 
      
       <div className='table' >
         <ul>
-            <li>
-                {mySearch}
+          <li className='instraction'>
+          Введите элемент на английском языке: 1 banan 100 gr rice  т.д ...
+          </li>
+            <li className='my-search'>
+              <b><i>  {mySearch}</i></b>
             </li>
         {
           myNutrition && <li className='par-nutrients'><span>"Total calories":{myNutrition.calories} kcal</span></li>
         }
-           {
-          myNutrition && <li className='nutrients'>{myNutrition.mealType} kcal</li>
-        }
+        
         {
           myNutrition && Object.values(myNutrition.totalNutrients)
             .map(({ label, quantity, unit,index }) =>

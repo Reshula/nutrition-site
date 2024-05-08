@@ -1,8 +1,8 @@
 
 import author from '../Assets/yilmaz-akin-FPKtCl74Hfs-unsplash (1).jpg';
 import avacado from '../Assets/avocado_4.png';
-import leaf from '../Assets/___17_2.png';
-import avacadoOne from '../Assets/2shutterstock_111489.jpg'
+import leaf from '../Assets/leaf.png';
+import avacadoOne from '../Assets/yellowavacado.jpg'
 import './About.css'
 const About = () =>{
   
@@ -33,36 +33,36 @@ const About = () =>{
                 </div>
                 <div className='section-about-one'>
                     <div className='section-par-about'>
-                        <img src={avacado} alt='avacado' width='70px'/>
+                        <img className='section-about-avacado' src={avacado} alt='avacado' />
                         <p>Любые дисфункции щитовидной железы (АИТ, гипотиреоз, болезнь Грейвса)</p>
                     </div>
                     <div className='section-par-about'>
-                        <img src={avacado} alt='avacado'width='70px'/>
+                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
                         <p>Другие аутоиммунные заболевания</p>
                     </div>
                     <div className='section-par-about'>
-                       <img src={avacado} alt='avacado'width='70px'/>
+                       <img className='section-about-avacado' src={avacado} alt='avacado'/>
                        <p>«Женские» гормональные дисбалансы (СПКЯ, эндометриоз, ПМС, проблемы с циклом)</p>
                     </div>
                     <div className='section-par-about'>
-                        <img src={avacado} alt='avacado'width='70px'/>
+                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
                         <p>Работа с ЖКТ (СИБР, ГЭРБ, СРК, желчеотток и т.д.)</p>
                     </div>
                     <div className='section-par-about'>
-                         <img src={avacado} alt='avacado'width='70px'/>
+                         <img className='section-about-avacado'src={avacado} alt='avacado'/>
                          <p>Метаболический синдром, инсулинорезистентность, коррекция веса</p>
                     </div>
                     <div className='section-par-about'>
-                        <img src={avacado} alt='avacado'width='70px'/>
+                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
                         <p>Подготовка к беременности и восстановление организма после родов</p>
                     </div>
                     <div className='section-par-about'>
-                    <img src={avacado} alt='avacado'width='70px'/>
+                    <img className='section-about-avacado'src={avacado} alt='avacado'/>
                     <p>Неудовлетворительное состояние кожи, волос, ногтей</p>
                         
                     </div>
                     <div className='section-par-about'>
-                        <img src={avacado} alt='avacado'width='70px'/>
+                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
                         <p>Подбор нутрицевтиков и расшифровка «дефицитарных» анализов (органические кислоты в моче, анализы крови)</p>
                     </div>
 
@@ -73,19 +73,19 @@ const About = () =>{
                     <h2>Вопросы, с которыми я НЕ работаю</h2>
                 <div className='section-about-two'>
                     <div className='section-par-about-two'>
-                        <img src={leaf} alt='leaf'width='50px'/>
+                        <img className='section-about-two-leaf' src={leaf} alt='leaf'/>
                         <p>Онкология</p>
                     </div>
                     <div className='section-par-about-two'>
-                        <img src={leaf} alt='leaf'width='50px'/>
+                        <img className='section-about-two-leaf'src={leaf} alt='leaf'/>
                         <p>Консультации детей и беременных женщин</p>
                     </div>
                     <div className='section-par-about-two'>
-                        <img src={leaf} alt='leaf'width='50px'/>
+                        <img className='section-about-two-leaf'src={leaf} alt='leaf'/>
                         <p>Паразитозы</p>
                     </div>
                     <div className='section-par-about-two'>
-                        <img src={leaf} alt='leaf'width='50px'/>
+                        <img className='section-about-two-leaf' src={leaf} alt='leaf'/>
                         <p>Обострения хронических заболеваний, требующие медицинского вмешательства</p>
                     </div>
                 </div>

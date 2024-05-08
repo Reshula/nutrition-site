@@ -1,0 +1,7 @@
+img{
+    width: 250px;
+}
+.program-container{
+    display: flex;
+    justify-content: space-between;
+}

@@ -16,10 +16,7 @@
     align-items: center;
  
 }
-/* .about-title-container{
-    display: flex;
-    
-} */
+
 h2{
    text-align: center;
     color: #008f4e;
@@ -77,6 +74,9 @@ h2{
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .section-about-avacado{
+    width: 60px;
+  }
 .section-par-about{
     width: 300px;
     margin: 20px;
@@ -95,6 +95,9 @@ h2{
 }
 .section-par-about-two{
     display: flex;
+}
+.section-about-two-leaf{
+    width: 40px;
 }
 .section-about-three{
     background-color: #f0ed54;
