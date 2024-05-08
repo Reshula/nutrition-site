@@ -1,0 +1,21 @@
+.nutrition-container{
+    background-image: url('../Assets/\(1\).jpg');
+    background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.par-nutrients{
+    color: #008f4e;
+    background-color: azure;
+    text-decoration: underline;
+}
+
+.nutrients{
+    color: #008f4e;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

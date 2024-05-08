@@ -1,0 +1,130 @@
+.main-about-container{
+    background-color: #FFF9F9;
+  }
+.about-container{
+    display: flex;
+    justify-content: center;
+ 
+}  
+.img-about-container{
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+}
+.about-par{
+    align-items: center;
+ 
+}
+/* .about-title-container{
+    display: flex;
+    
+} */
+h2{
+   text-align: center;
+    color: #008f4e;
+    margin-top: 20px;
+    
+  
+}
+.about-par{
+    width: 700px;
+}
+
+
+.button {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 25px;
+  } 
+  
+  .button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  } 
+  .my-work-about{
+    background-color: #FFFFFF;
+  }
+
+  .section-about-one{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.section-par-about{
+    width: 300px;
+    margin: 20px;
+}
+.section-about-div{
+    background-color: #FFF9F9;
+    
+
+}
+.section-about-two{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    flex-wrap: wrap;
+  
+}
+.section-par-about-two{
+    display: flex;
+}
+.section-about-three{
+    background-color: #f0ed54;
+    height: 80vh;
+}
+.section-par-three{
+    font-size: 50px;
+    color:#008f4e
+}
+.img-about-three{
+height: 80vh;
+width: 100%;
+}
+@media all and (max-width:800px){
+    .img-about-three{
+        height: 50vh;
+        width: 100%;
+        }
+    .img-about-container{
+        width:240px;
+        height: 350;
+        margin: 10px;
+            }    
+}
+
+@media all and (max-width:500px){
+    .section-par-about{
+        margin-left:50px ;
+
+    }
+
+
+}
