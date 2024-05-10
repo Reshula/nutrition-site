@@ -7,6 +7,7 @@ import material from '../Assets/corn.jpg';
 
 const Home = () =>{
     return(
+        <section>
         <div className='main'>
             <div className='title-name'>
                 <h2>Olesa</h2>
@@ -79,6 +80,7 @@ const Home = () =>{
 
 
         </div>
+        </section>
     )
 }
 export default Home;

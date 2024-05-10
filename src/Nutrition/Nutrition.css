@@ -1,12 +1,14 @@
 body{
-    margin: 0;
+  
 }
 .nutrition-container{
-background-image: url('../Assets/apple.jpg');
-background-attachment: fixed;
+
+    background-image: url('../Assets/apple.jpg');
+    background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+
 }
 .par-nutrients{
     color: #008f4e;
@@ -44,6 +46,7 @@ background-attachment: fixed;
 }
 Ul{
     background-image: url('../Assets/photo.jpeg');
+    border-radius: 15px;
    
 }
 .instraction{
@@ -56,6 +59,7 @@ Ul{
     border-radius: 15px;
     border: 1px solid #008f4e;
     margin:50px 40px 0px 10px;
+    
 }
 
 .list{

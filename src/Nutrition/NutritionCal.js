@@ -73,6 +73,7 @@ const finalSearch = e => {
   setWordSubmmited(mySearch);
 }
   return (
+    <section id="nutritionCal_section">
     <div className="nutrition-container">
       {stateLoader && <LoaderPage />}
      
@@ -117,6 +118,7 @@ const finalSearch = e => {
       </div>
    
     </div>
+    </section>
   );
 }
 

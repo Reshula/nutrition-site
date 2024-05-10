@@ -1,10 +1,11 @@
 import './Program.css';
 import { data } from '../Data/data';
-import ProgramMap from './Program'
+import ProgramMap from './ProgramMap'
 
 
 const Program = () =>{
     return(
+        <section id="program_section">
         <div>
            
             <div className='program-main-container'>
@@ -14,7 +15,7 @@ const Program = () =>{
                 <div className='program-box'>
                 {data.map(prog => <ProgramMap key={prog.id} prog={prog}/>)}
                    
-                    <button>Подробнее</button>
+                  
                 </div>
 
             </div>
@@ -22,6 +23,7 @@ const Program = () =>{
 
 
         </div>
+        </section>
     )
 }
 export default Program;

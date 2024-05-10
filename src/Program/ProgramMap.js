@@ -1,9 +1,9 @@
-const ProgramMap = ({prog,describe}) =>{
+const ProgramMap = ({prog}) =>{
     return(
-        <div>
-             <img src={`../${prog.image}.jpg`}  alt='food'/>
-             <p>{describe}</p>
-
+        <div className="programMap-container">
+             <img className="img-programMap" src={`../${prog.image}.jpg`}  alt='food'/>
+             <p>{prog.describe}</p>
+             <button>Подробнее</button>
         </div>
     )
 }

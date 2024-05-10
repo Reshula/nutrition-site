@@ -7,6 +7,7 @@ import './About.css'
 const About = () =>{
   
     return (
+        <section id="about_section" >
         <div className="main-about-container">
             <div className="about-title-container">
                 <h2>Обо мне</h2>
@@ -98,6 +99,7 @@ const About = () =>{
                 </div>
 </div>
         </div>
+        </section>
     )
 }
 export default About;

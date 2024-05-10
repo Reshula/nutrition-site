@@ -5,17 +5,22 @@ import NavBar from "../Navbar/NavBar";
 import NutritionCal from "../Nutrition/NutritionCal";
 import Routers from "../routers/Routers";
 import Footer from "../Footer/Footer";
+import { HashRouter as Router } from 'react-router-dom'
 
 
 const Layout = () =>{
     return(
     <div>
-        <NavBar/>
+        <Router>
+          <NavBar />
+        </Router>
+        <div>
         <Routers/>
+        </div>
         {/* <Home /> */}
-        <Program />
+        {/* <Program />
         <About/>
-        <NutritionCal />
+        <NutritionCal /> */}
         <Footer/>
     </div>
     )

@@ -1,17 +1,22 @@
-.logo-container{
+.main-container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 .menu{
     display: flex;
-    /* justify-content: space-around; */
-    margin: 5px;
-    padding: 5px;
+    justify-content: center;
+     margin: 5px;
+    padding: 5px; 
+    list-style-type: none;
+    text-transform: uppercase;
+
 }
 .menu-list{
-    display: flex;
-    justify-content: space-between;
+  
     color: #008f4e;
+    margin: 20px;
+    text-decoration: none;
+   
  
  
 }
