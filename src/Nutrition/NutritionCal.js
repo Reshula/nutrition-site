@@ -79,7 +79,7 @@ const finalSearch = e => {
      
       <div className='image-container'>
       <div className="centered">
-        <h1 className='title-nutrition'> Калькулятор калорий</h1>
+        <h1 className='title-program'> Калькулятор калорий</h1>
       <form onSubmit={finalSearch}>
         <input
           placeholder="Выбери продукт..."
@@ -92,7 +92,7 @@ const finalSearch = e => {
       </div> 
      
       <div className='table' >
-        <ul>
+        <ul className='ul-instraction'>
           <li className='instraction'>
           Введите элемент на английском языке: 1 banan 100 gr rice  т.д ...
           </li>

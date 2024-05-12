@@ -4,6 +4,9 @@ import badge from '../Assets/shtamp.png';
 import prog from '../Assets/Depositphotos_174531.jpg';
 import consultation from '../Assets/photo (1).jpg';
 import material from '../Assets/corn.jpg';
+import About from '../About/About';
+import FreeMat from '../FreeMaterial/FreeMat'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Home = () =>{
     return(
@@ -55,19 +58,31 @@ const Home = () =>{
                 </div>
                 <div className='img-program-container'>
                     <div className='box' >
-                      <img className='img-program' src={prog} alt='fruit'/>
+                    <nav>
+                    <Link to='/program_section'>
+                        <img className='img-program' src={prog} alt='fruit'/>
+                      </Link>
+                    </nav>
                       <div class="middle">
     <div class="text">ПРОГРАММЫ</div>
   </div>
                     </div>
                     <div className='box'>
-                      <img className='img-program' src={consultation} alt='fruit'/>
+                    <nav>
+                      <Link to='/consultation_section'>
+                        <img className='img-program' src={consultation} alt='fruit'/>
+                      </Link>
+                    </nav>
                       <div class="middle">
     <div class="text">КОНСУЛЬТАЦИИ</div>
   </div>
                     </div>
                     <div className='box'>
-                      <img className='img-program' src={material} alt='fruit' width='300px' />
+                        <nav>
+                            <Link to='/freeMat_section'>
+                          <img className='img-program' src={material} alt='fruit' width='300px' />
+                          </Link>
+                      </nav>
                       <div class="middle">
     <div class="text">БЕСПЛАТНЫЕ МАТЕРИАЛЫ</div>
   </div>
@@ -78,7 +93,8 @@ const Home = () =>{
     
         </div>
 
-
+<About/>
+<FreeMat />
         </div>
         </section>
     )

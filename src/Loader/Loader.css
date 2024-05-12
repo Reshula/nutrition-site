@@ -6,7 +6,7 @@
     margin-top: 150px;
   }
   .lds-hourglass{
-    margin: 200px;
+    margin-left: 680px;
   }
   .lds-hourglass:after {
     content: " ";
@@ -31,5 +31,15 @@
     }
     100% {
       transform: rotate(1800deg);
+    }
+  }
+  @media all and (max-width:798px){
+    .lds-hourglass{
+      margin-left: 350px;
+    }
+  }
+  @media all and (max-width:498px){
+    .lds-hourglass{
+      margin-left: 180px;
     }
   }

@@ -1,13 +1,18 @@
 import { useState , useEffect} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import {  IoMenu } from "react-icons/io5";
 import './NavBar.css';
 import logo from '../Assets/logo_avocado.png';
-import Hamburger from 'hamburger-react';
+
 
 const NavBar = () =>{
+
+  const [showNavbar, setShowNavbar] = useState(false);
+  const toggleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+  }
  
   const [fixNav, setFixNav] =useState(false);
-
   const setFixNavbar = () => {
     if (window.scrollY > 0 ) {
       setFixNav(true);
@@ -19,50 +24,41 @@ const NavBar = () =>{
     return () => window.removeEventListener("scroll", setFixNavbar);
   }, []);
 
-
- 
-  
-    return(
-        <div  className={fixNav ? 'header fixed' : 'header'}>
-            <div >
-               
+return (
+  <div  className={fixNav ? 'header fixed' : 'header'} >
+  <nav className="navbar">
+    <div className="container">
+      <div className="logo">
+      
+      </div>
+      <div className="menu-icon" onClick={toggleShowNavbar}>
+        <IoMenu />
+      </div>
+      <div className={`nav-elements  ${showNavbar && 'active'}`}>
+        <ul>
+          
+          <li>
+          <Link to="/"className='menu-list'><img className='logo-avacado' src={logo} alt='avacado'/></Link>
+          </li>
+          <li>
+          <Link to="/program_section"className='menu-list'>Программы </Link>
+          </li>
+          <li>
             
-                </div>
-             
-              
-                  <nav  >
-                    <ul className='menu'>
-                  <li>  <img className='logo-avacado' src={logo} alt='logo'/></li>
-                      
-                
-                          <li>
-                             <Link to="/"className='menu-list'>Home </Link>
-                          </li>
-                        <li>
-                             <Link to="/program_section"className='menu-list'>ПРОГРАММЫ </Link>
-                        </li>
-                          <li>
-                             <Link to="/nutritionCal_section"className='menu-list'>Калькулятор калорий</Link>
-                        </li>
-                          <li>
-                             <Link to="/consultation_section"className='menu-list'>КОНСУЛЬТАЦИИ</Link>
-                        </li>
-                         {/* <li>
-                             <Link to="/#formatConsult_section"className='menu-list'>ФОРМАТ КОНСУЛЬТАЦИЙ</Link>
-                        </li> */}
-                          {/* <li>
-                             <Link to="/#freeMatirial_section"className='menu-list'>БЕСПЛАТНЫЕ МАТЕРИАЛЫЙ</Link>
-                        </li> */}
-                          <li>
-                             <Link to="/about_section"className='menu-list'>Обо мне</Link>
-                        </li>
-                    
-                       
-                    </ul>
-                  
-                  </nav>
-
-        </div>
-    )
+            <Link to="/nutritionCal_section"className='menu-list'>Калькулятор </Link>
+          </li>
+          <li>
+          <Link to="/consultation_section"className='menu-list'>Консультации</Link>
+          </li>
+          <li>
+       <Link to="/about_section"className='menu-list'>Обо мне</Link>
+       </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+)
 }
 export default NavBar;

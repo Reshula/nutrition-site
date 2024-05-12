@@ -1,18 +1,16 @@
-body{
-  
-}
+
 .nutrition-container{
 
-    background-image: url('../Assets/apple.jpg');
-    background-attachment: fixed;
+ background-image: url('../Assets/apple.jpg');
+ background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
 
+
 }
 .par-nutrients{
     color: #008f4e;
-   
     text-decoration: underline;
     font-size: 20px;
     list-style-type:none;
@@ -21,12 +19,8 @@ body{
 .nutrients{
     color: #008f4e;
 }
-.title-nutrition{
-    color: #008f4e;
-    text-shadow:5px ;
-}
-.centered{
 
+.centered{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +28,6 @@ body{
 }
 .my-search{
     list-style-type:none;
-   
     font-size: 25px;
     padding: 10px;
     margin-right:150px ;
@@ -44,7 +37,7 @@ body{
     justify-content: center;
     
 }
-Ul{
+.ul-instraction{
     background-image: url('../Assets/photo.jpeg');
     border-radius: 15px;
    
@@ -68,10 +61,14 @@ Ul{
     list-style-type:none;
     font-size: 20px;
     text-decoration: underline;
+    margin-right: 20px;
 }
 .list span li {
     margin-right: 20px;
 } 
+/* em{
+    margin-left: 30px;
+} */
 input{
     width: 60%;
     padding:12px ;

@@ -1,5 +1,5 @@
 .main-about-container{
-    background-color: #FFF9F9;
+    background-color: #fafaed;
   }
 .about-container{
     display: flex;
@@ -82,7 +82,7 @@ h2{
     margin: 20px;
 }
 .section-about-div{
-    background-color: #FFF9F9;
+    background-color: #fafaed;
     
 
 }
@@ -101,7 +101,7 @@ h2{
 }
 .section-about-three{
     background-color: #f0ed54;
-    height: 80vh;
+    height: 100vh;
 }
 .section-par-three{
     font-size: 50px;
@@ -120,13 +120,22 @@ width: 100%;
         width:240px;
         height: 350;
         margin: 10px;
-            }    
+        }   
+    .section-about-three{
+        height: 79vh;
+    }         
 }
 
 @media all and (max-width:500px){
     .section-par-about{
         margin-left:50px ;
 
+    }
+    .section-about-three{
+        height: 78vh;
+    }    
+    .section-par-three{
+        font-size: 30px;
     }
 
 

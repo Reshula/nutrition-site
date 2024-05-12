@@ -10,7 +10,7 @@ const About = () =>{
         <section id="about_section" >
         <div className="main-about-container">
             <div className="about-title-container">
-                <h2>Обо мне</h2>
+                <h2 className='title-program'>Обо мне</h2>
             </div>
             <div className="about-container">
                 <div className="about-img">

@@ -7,6 +7,8 @@ import NutritionCal from './Nutrition/NutritionCal';
 import Consultation from './Consultation/Consultation';
 import NavBar from './Navbar/NavBar';
 import Footer from './Footer/Footer';
+import  AboutProduct from './Program/AboutProduct'
+import FreeMat from './FreeMaterial/FreeMat';
 
 
 
@@ -21,6 +23,8 @@ function App() {
       <Route path="/about_section" element={<About/>} />
       <Route path="/nutritionCal_section" element={<NutritionCal/>} />
       <Route path="/consultation_section" element={<Consultation/>} />
+      <Route path="/program_section/:name" element={<AboutProduct/>} />
+      <Route path="/freeMat_section" element={<FreeMat/>}/>
     </Routes>  
     
     </Routers>

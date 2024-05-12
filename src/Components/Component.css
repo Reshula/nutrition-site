@@ -1,16 +1,9 @@
 /* Home */
-.main{
- background-image: url('../Assets/photo.jpeg');
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-}
+
 .main-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
     position: relative;
 }
 .left-container{
@@ -116,13 +109,14 @@ margin-right: 200px;
     border: none;
     margin-left: 100px;
 }
+
 /* PROGRAM Button */
 .box{
     position: relative;
     margin: 20px;
     align-items: center;
- 
 }
+
 .img-program-container{
     display: flex;
     justify-content: space-between;
@@ -175,13 +169,11 @@ margin-right: 200px;
 
 
   @media all and (max-width:800px){
-    .rigth-container{
-        margin-left: 120px;
+    .box{
+        margin-left: 100px;
     }
-    /* .box{
-        margin-left: 50px;
-    } */
-  }
+}
+
 
  
   @media all and (max-width:500px){
@@ -198,10 +190,9 @@ margin-right: 200px;
         font-size: 15px;
         margin: 20px;
     }
-    /* .rigth-container{
-        margin-left: 150px;
-    } */
-
-
+    .box{
+        margin-left: 20px;
+    }
+ 
 
    }
