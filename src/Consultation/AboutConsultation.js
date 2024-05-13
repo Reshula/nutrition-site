@@ -1,13 +1,13 @@
-import { data } from '../Data/data';
+import { dataConsultation } from '../Data/dataConsultation';
 import { useParams, useNavigate } from "react-router-dom";
-import './Program.css';
+
 import { addItemToCart } from '../redux/cartSlice';
 
 import { useDispatch } from "react-redux";
 
-const AboutProduct = () =>{
+const AboutConsultation = () =>{
     const navigate = useNavigate();
-    const { name } = useParams()
+    const { titleC } = useParams()
     const dispatch = useDispatch();
 
 
@@ -15,26 +15,27 @@ const AboutProduct = () =>{
 return(
     <div className='about-product-container'>
      
-            {data.filter((item) => item.name === name).map((elem, index) =>{
+            {dataConsultation.filter((item) => item.titleC === titleC).map((elem, index) =>{
                 return(
                     <div className='main-container-box'  key={index}>
                         <div className='left-container-box'>
                         <img className="info-img"
-                        src={`../${elem.image}.jpg`}
+                        src={`../${elem.img}.jpg`}
                         alt='food' width='50px'/>
                         </div>
                           <div className='rigth-container-box'>
-                            <h3 className='rigth-container-title'>{elem.describe}</h3>
-                            <p className='rigth-container-par'>{elem.price}</p>
-                            <p className='rigth-container-par'>{elem.title}</p>
-                            <p className='rigth-container-par'>{elem.titleOne}</p>
+                            <h3 className='rigth-container-title'>{elem.name}</h3>
+                            <p className='rigth-container-par'><strong>{elem.price} man</strong></p>
+                            <p className='rigth-container-par'>{elem.describtionOne}</p>
+                            <p className='rigth-container-par'>{elem.descriptionTwo}</p>
+                            <p className='rigth-container-par'>{elem.descriptionThree}</p>
                             <div className='div-btn'>
                             <button className='btn-to-buy'
                                    onClick= {() =>{
                                     dispatch(
                                         addItemToCart({
                                             id: elem.id,
-                                            img: elem.image,
+                                            img: elem.img,
                                             price: elem.price,
                                         })
                                     )
@@ -54,4 +55,4 @@ return(
 )
 
 }
-export default AboutProduct;
+export default AboutConsultation;

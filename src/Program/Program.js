@@ -14,10 +14,7 @@ const Program = () =>{
             <div className='program-container'>
                 <div className='program-box'>
                 {data.map(prog => <ProgramMap key={prog.id} prog={prog}/>)}
-                   
-                  
                 </div>
-
             </div>
      
 
