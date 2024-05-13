@@ -1,4 +1,4 @@
-.main-container{
+/* .main-container{
     display: flex;
     justify-content: space-evenly;
 }
@@ -34,7 +34,7 @@
     margin-right: 5px;
    
   } */
-  
+/*   
   .nav-elements ul a {
     font-size: 25px;
     font-weight: 600;
@@ -119,8 +119,8 @@
 @media all and (max-width:500px){
 
 
-    .icon-menu{
-        display: fixed;
+    .menu-icon{
+        display: block;
     }
     .nav-elements {
         position: absolute;
@@ -152,4 +152,136 @@
         z-index: 10;
       }
 
+}  */
+
+.logo-nav{
+  width: 50px;
+ 
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 28px;
+ 
+
+}
+
+.navbar {
+  height: 100px;
+  margin-bottom: 20px;
+ padding: 10px;
+  color: #fafaed;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+
+}
+
+.menu-icon {
+  display: none;
+  color:#008f4e;
+
+}
+/* .ul-nav{
+height: 80px;
+} */
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-elements ul a {
+  font-size: 28px;
+  font-weight: 400;
+  color: #008f4e;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  
+  font-weight: 500;
+  position: relative;
+
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom:-4px;
+  left: 0;
+  width: 100%;
+  /* height: 10px; */
+  background-color:#fafaed;
+}
+
+
+
+@media all and (max-width: 500px) {
+  .container{
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color:#fafaed;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 200px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+.fixed {
+  background-color: #fafaed;
+
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: all .2s ease-in-out;
+  z-index: 9999;
+}
+.header{
+
+  height: 80px;
+}
+
+
+
+
