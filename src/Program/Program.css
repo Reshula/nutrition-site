@@ -12,6 +12,7 @@ img{
     font-size: 40px;
     color: #008f4e;
     text-shadow:5px ;
+
 }
 .program-box{
     display: flex;
@@ -23,6 +24,7 @@ img{
     width: 350px;
     margin: 10px;
 }
+
 @media all and (max-width:800px){
     .programMap-container{
         width: 300px;
@@ -133,6 +135,7 @@ img{
 .main-container-box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -140,20 +143,23 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-     /* flex: 1;  */
-    
-    
-  
+    margin-left: 10px;
+    margin-right: 50px;
 
 }
 
 .right-container-box{
-    display: flex;
-    flex-direction: column;
-    /* flex:1; */
+  display: flex;
+  flex-direction: column;
+ 
   
-    
+
+  
 } 
+.rigth-container-box{
+  width: 400px;
+  margin-left: 20px;
+}
 .div-btn{
   display: flex;
   flex-direction: column;
@@ -169,4 +175,7 @@ img{
 .btn-go-back:hover{
   color: #008f4e;
   scale: 1.1;
+}
+.info-img{
+  width: 350px;
 }

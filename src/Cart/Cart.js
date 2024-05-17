@@ -3,11 +3,9 @@ import CartItem from './CartItem';
 import { getCartItems , getTotalPrice} from '../redux/cartSlice';
 import ContinueShopping from './ContinueShopping';
 
-
 const Cart = () =>{
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice)
-
 
     return(
         <section id='cart_section'>
@@ -22,8 +20,6 @@ const Cart = () =>{
             <div className='icon-cart'>
                 {totalPrice === 0 && <ContinueShopping /> }
             </div>
-
-            
 
         </div>
         </section>

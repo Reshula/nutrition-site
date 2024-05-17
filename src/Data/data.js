@@ -74,7 +74,7 @@
  
 
 ]
-export const freeMaterial =[
+export const freeMaterial = [
     {
         id:1,
         img:'cabage',
@@ -99,18 +99,22 @@ export const freeMaterial =[
 export const dataArticle = [
     {
         id:'1',
-        img:'A4-1',
+        img:'sertificate1',
     },
     {
         id:'2',
-        img:'A4-2',
+        img:'sertificate2',
     },
     {
         id:'3',
-        img:'A4-3',
+        img:'sertificate3',
     },
     {
         id:'4',
-        img:'A4-4',
+        img:'sertificate4',
+    },
+    {
+        id:'5',
+        img:'sertificate5',
     },
 ]

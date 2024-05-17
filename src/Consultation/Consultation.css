@@ -1,15 +1,29 @@
+#consultation_section{
+    background-color: #FFFFFF;
+}
 .title-consultation{
     font-size: 30px;
     color: #008f4e;
     text-shadow:5px ;
     text-align: center;
 }
-.consultation-box{
-    display: flex;
-    flex-wrap:wrap ;
-    justify-content: space-around;
-    margin: 10px;
+.rigth-container-title{
+    font-size: 40px;
+    color: #008f4e;
 }
+.consultation-container{
+    display: flex;
+    
+    flex-wrap: wrap;
+
+}
+.consult-container{
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 600px;
+}
+
+
 .btn-consult{
     appearance: button;
     background-color:#008f4e;
@@ -37,5 +51,25 @@
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
-    width: 100%;
+    width: 25%;
+}
+.img-consultMap{
+    width: 450px;
+    
+}
+.title-par{
+    width: 300px;
+}
+
+@media all and (max-width:800px){
+    .consult-container{
+        width: 300px;
+    }
+    .img-consultMap{
+        width: 250px;
+    }
+    .btn-consult{
+        width: 50%;
+    }
+
 }

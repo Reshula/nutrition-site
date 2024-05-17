@@ -15,7 +15,6 @@
 }
 .content{
     padding: 20px 10px ;
- 
   
 }
 .accordion{
@@ -23,12 +22,22 @@
     display: flex;
     flex-direction: column;
     
- 
-
 }
 .title-accordion{
     text-align: center;
     color: #008f4e;
     font-size: 50px;
+}
+.accordion-container{
+    display: flex;
+    flex-direction: column;
+   margin-left: 500px;
+}
+
+@media all and (max-width:800px){
+
+    .accordion-container{
+        margin-left: 100px;
+    }
 }
 

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { dataArticle } from '../Data/data';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 
 
 
-const ArticleSlide = ({ dataArticle ,index}) => {
+const ArticleSlide = ({ dataArticle}) => {
     const [slideIndex, setSlideIndex] = useState(0);
     const {img}   = dataArticle[slideIndex];
    
@@ -21,7 +20,7 @@ const ArticleSlide = ({ dataArticle ,index}) => {
     return (
        <div>
         <div className="slider">
-            <img className='slide-img' src={`../${img}.png`} alt='article'/>
+            <img className='slide-img' src={`../${img}.jpg`} alt='article'/>
             <BsChevronCompactLeft onClick={prevSlide} className='left-btn-one-two-three' />
             <BsChevronCompactRight onClick={nextSlide} className='right-btn-one-two-three'/>
      

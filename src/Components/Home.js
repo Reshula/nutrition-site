@@ -8,14 +8,16 @@ import About from '../About/About';
 import FreeMat from '../FreeMaterial/FreeMat'
 import { HashLink as Link } from 'react-router-hash-link';
 import { Accordion } from '../Accordion/Accordion';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () =>{
     return(
         <section>
         <div className='main'>
             <div className='title-name'>
-                <h2>Olesa</h2>
+                <h2 className='title-name'>ОЛЕСЯ ШАРАБЧИЕВА</h2>
             </div>
+        
             <div className='main-container'>
             <div className='rigth-container'>
             <div className='title-container'>
@@ -24,6 +26,7 @@ const Home = () =>{
                 <h1>КОНСУЛЬТАНТ ПО ПИТАНИЮ</h1>
                 <h1>И ЗДОРОВОМУ ОБРАЗУ ЖИЗНИ</h1>
             </div>
+       
             <div className='par-container'>
                 <ul className='ul-list'>
                     <li>
@@ -41,11 +44,22 @@ const Home = () =>{
                     дам поддержку и мотивацию
                     </li>
                     </li>
+                    <div className='type'>
+            <TypeAnimation 
+            sequence={[
+                '@lesi_nutritionist',3000
+            ]}
+            speed={10}
+            style={{ fontSize: '2em' }}
+            repeat={Infinity}
+            />
+        </div>
                 </ul>
 
             </div>
             </div>
             </div>
+        
             <div className='left-container'>
                 <div >
                     <img className='avatar-container' src={avatar} alt='avatar'/>

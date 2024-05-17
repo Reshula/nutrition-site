@@ -24,33 +24,10 @@ import Swal from 'sweetalert2';
 
         removeItemFromCart: (state, action) => {
             const { cartItemId } = action.payload;
-          
-            // Filter out the item to remove
-         
-          
-            Swal.fire({
-              title: "Вы уверены?",
-              text: "Вы не сможете это вернуть!",
-              icon: "warning",
-              showCancelButton: true,
-              confirmButtonColor: "#3085d6",
-              cancelButtonColor: "#d33",
-              confirmButtonText: "Да, удалите!"
-            }).then((result) => {
-              if (result.isConfirmed) {
-                state.cartItems = state.cartItems.filter(
-                  cartItem => cartItem.id !== cartItemId
-                );
-                // dispatch(removeItemFromCart({ cartItemId }));
-                
-                Swal.fire({
-                  title: "Удалено!",
-                  text: "Ваш товар был удален из корзины.",
-                  icon: "success"
-                });
-              }
-       
-            });
+            state.cartItems = state.cartItems.filter(
+              cartItem => cartItem.id !== cartItemId
+            );
+    
           }
     },
 })
@@ -60,7 +37,7 @@ export const getTotalPrice = state =>{
     }, 0)
 }
 export const getTotalArticles = state => {
-    return state.cart.cartItems.totalItems 
+    return state.cart.cartItems.totalItems
   };
 
 

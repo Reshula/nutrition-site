@@ -7,16 +7,13 @@ import { useState } from "react"
         setIsOpen(!isOpen)
     }
 
-
-
-
     return(<div className='accordion-div'>
         <div className={isOpen ? 'activeAccord' : 'default'} onClick={handleIsOpen}>
             {title}
         </div>
         {
             isOpen && <div className='content'>
-                {content}
+            {content}
 
             </div>
         }

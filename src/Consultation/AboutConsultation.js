@@ -1,10 +1,9 @@
-import { dataConsultation } from '../Data/dataConsultation';
-import { consultationDescriptions } from '../Data/dataConsultation';
+import { dataConsultation, consultationDescriptions } from '../Data/dataConsultation';
 import { useParams, useNavigate } from "react-router-dom";
-
-import { addItemToCart } from '../redux/cartSlice';
-
 import { useDispatch } from "react-redux";
+import { addItemToCart } from '../redux/cartSlice';
+// import ConsultationItem from './ConsultationItem';
+
 
 const AboutConsultation = () =>{
     const navigate = useNavigate();
@@ -16,28 +15,32 @@ const AboutConsultation = () =>{
 return(
     <div className='about-product-container'>
      
-            {dataConsultation.filter((item) => item.titleC === titleC).map((elem, index) =>{
+            {dataConsultation.filter((item) => 
+            item.titleC === titleC)
+            .map((elem, index) =>{
                 return(
                     <div className='main-container-box'  key={index}>
                         <div className='left-container-box'>
                         <img className="info-img"
                         src={`../${elem.img}.jpg`}
-                        alt='item' width='50px'/>
+                        alt='item' />
                         </div>
                           <div className='rigth-container-box'>
-                            <h3 className='rigth-container-title'>{elem.name}</h3>
-                            <p className='rigth-container-par'><strong>{elem.price} man</strong></p>
-                            {/* <p className='rigth-container-par'>{elem.describtionOne}</p>
-                            <p className='rigth-container-par'>{elem.descriptionTwo}</p>
-                            <p className='rigth-container-par'>{elem.descriptionThree}</p> */}
-                            <p>
-                            {consultationDescriptions.map((consultation, index) => {
-  console.log(`Consultation ${index + 1}:`);
-  console.log(`Description One: ${consultation.describtionOne}`);
-  console.log(`Description Two: ${consultation.describtionTwo}`);
-  console.log(`Description Three: ${consultation.describtionThree}`);
-})
-}</p>
+                            <h3 className='rigth-container-title'><strong>{elem.name}</strong></h3>
+                            <p>{elem.price} <strong>azn</strong></p>
+                            <p>{elem.describtionOne}</p>
+                            <p>{elem.describtionTwo}</p>
+                            <p>{elem.describtionThree}</p>
+                     
+                {/* {consultationDescriptions.map(description =>
+                 <ConsultationItem 
+                 key={description.id}
+                 describtineOne={description.describtionOne}
+                 describtineTwo={description.describtionTwo}
+                 describtineThree={description.describtionThree}/>)} */}
+                         
+                          
+
                             <div className='div-btn'>
                             <button className='btn-to-buy'
                                    onClick= {() =>{
@@ -50,7 +53,7 @@ return(
                                     )
                                    }
                                    }
-                              >Купить
+                              >Заявка
                                </button>
                             <button className="btn-go-back" onClick={() => navigate(-1)}>Назад </button>
                             </div>

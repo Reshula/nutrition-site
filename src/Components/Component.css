@@ -12,13 +12,15 @@
 
 }
 .rigth-container{
-   
-margin-right: 200px;
-
+margin-left: 40px;
 }
 
 .title{
     color:#008f4e;
+}
+.title-name{
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
 }
 .span-color{
     color: #008f4e;
@@ -26,6 +28,13 @@ margin-right: 200px;
 .avatar-container{
     width: 450px;
 
+}
+.type{
+    color: #ffff;
+    text-transform: initial;
+    font-family: cursive;
+    background-color: #04AA6D;
+    font-size: 12px;
 }
 .badge-conatiner{
     width: 100px;
@@ -192,6 +201,9 @@ margin-right: 200px;
     }
     .box{
         margin-left: 20px;
+    }
+    .rigth-container{
+        margin-left: 15px;
     }
  
 

@@ -30,7 +30,6 @@ function App() {
       <Route path="/freeMat_section" element={<FreeMat/>}/>
       <Route path="/cart_section" element={<Cart/>}/>
     </Routes>  
-    
     </Routers>
     
     <Footer/>
