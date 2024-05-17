@@ -7,6 +7,7 @@ import material from '../Assets/corn.jpg';
 import About from '../About/About';
 import FreeMat from '../FreeMaterial/FreeMat'
 import { HashLink as Link } from 'react-router-hash-link';
+import { Accordion } from '../Accordion/Accordion';
 
 const Home = () =>{
     return(
@@ -95,6 +96,7 @@ const Home = () =>{
 
 <About/>
 <FreeMat />
+<Accordion/>
         </div>
         </section>
     )

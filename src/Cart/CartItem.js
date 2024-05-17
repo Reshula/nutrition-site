@@ -1,7 +1,8 @@
-import { data , dataConsultation} from "../Data/data";
+import { data } from "../Data/data";
 import './Cart.css';
 import { useDispatch } from "react-redux";
-import { removeItemFromCart } from '../redux/cartSlice'
+import { removeItemFromCart } from '../redux/cartSlice';
+import trash from '../Assets/trash--v1.png'
 
 const CartItem = ({cartItem}) =>{
     
@@ -17,11 +18,11 @@ const CartItem = ({cartItem}) =>{
             </div>
             <div className="cartItem-block1">
 
-               <p> <strong> {prog. describe}</strong></p>
+               <p> <strong>{prog.describe}</strong></p>
                <p> Price: $ {prog.price * cartItem.quantity}</p>
                <p> {cartItem.quantity} item(s)</p>
                <span onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}>
-              
+               <img className='trash-icon' src={trash} alt="icon" width="10px"/>
                </span>
             </div>
  

@@ -14,6 +14,7 @@ import Swal from 'sweetalert2';
                 id: timeId,
                 progId: action.payload.id,
                 quantity: action.payload.quantity,
+                totalItems: action.payload.quantity,
                 totalPrice: action.payload.quantity * action.payload.price,
                 
             })
@@ -59,7 +60,7 @@ export const getTotalPrice = state =>{
     }, 0)
 }
 export const getTotalArticles = state => {
-    return state.cart.cartItems.length 
+    return state.cart.cartItems.totalItems 
   };
 
 

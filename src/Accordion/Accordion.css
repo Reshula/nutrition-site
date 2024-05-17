@@ -1,0 +1,34 @@
+.activeAccord{
+    padding: 10px  30px;
+    border-top: 2px solid #008f4e;
+    cursor: pointer;
+    background-color: none;
+    width: 45%;
+  
+}
+.default{
+    padding: 10px  30px;
+    border-top: 2px solid #008f4e;
+    cursor: pointer;
+    width: 45%;
+  
+}
+.content{
+    padding: 20px 10px ;
+ 
+  
+}
+.accordion{
+    background-color: #fafaed;
+    display: flex;
+    flex-direction: column;
+    
+ 
+
+}
+.title-accordion{
+    text-align: center;
+    color: #008f4e;
+    font-size: 50px;
+}
+
