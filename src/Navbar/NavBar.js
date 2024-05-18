@@ -1,7 +1,8 @@
 // 
 import { useState , useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import {  IoMenu} from "react-icons/io5";
+
+import { AiOutlineBars } from "react-icons/ai";
 import './NavBar.css';
 import logo from '../Assets/logo_avocado.png'
 
@@ -30,7 +31,7 @@ const NavBar = () => {
     
        
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <IoMenu />
+          <AiOutlineBars />
         </div>
        
         <div className={`nav-elements  ${showNavbar && 'active'}`}>

@@ -2,7 +2,7 @@ import { data } from '../Data/data';
 import { useParams, useNavigate } from "react-router-dom";
 import './Program.css';
 import { addItemToCart } from '../redux/cartSlice';
-import { useState } from 'react';
+
 import { useDispatch } from "react-redux";
 // import ChangeQuantity from '../Cart/ChnageQuantity';
 

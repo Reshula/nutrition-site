@@ -1,7 +1,8 @@
-import { dataConsultation, consultationDescriptions } from '../Data/dataConsultation';
+import { dataConsultation } from '../Data/dataConsultation';
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from '../redux/cartSlice';
+// import { consultationDescriptions } '../Data/dataConsultation';
 // import ConsultationItem from './ConsultationItem';
 
 

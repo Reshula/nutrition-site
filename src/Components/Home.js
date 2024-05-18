@@ -62,13 +62,17 @@ const Home = () =>{
         
             <div className='left-container'>
                 <div >
-                    <img className='avatar-container' src={avatar} alt='avatar'/>
+                    <img className='avatar-container' src={avatar} alt='avatar' data-aos="fade-up"/>
                 </div>
             
             </div>
             </div>
             <div className='bottom-container'>
+                <nav>
+                <Link to='/consultation_section'>
                 <button className='glow-on-hover'>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+                </Link>
+                </nav>
                 <img className='badge-conatiner' src={badge} alt='badge'/>
                 </div>
                 <div className='img-program-container'>

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+
+
+import { GoTriangleRight } from "react-icons/go";
+import { GoTriangleLeft } from "react-icons/go";
 
 
 
@@ -20,9 +23,10 @@ const ArticleSlide = ({ dataArticle}) => {
     return (
        <div>
         <div className="slider">
+          
+            <GoTriangleLeft onClick={prevSlide} className='left-btn' />
             <img className='slide-img' src={`../${img}.jpg`} alt='article'/>
-            <BsChevronCompactLeft onClick={prevSlide} className='left-btn-one-two-three' />
-            <BsChevronCompactRight onClick={nextSlide} className='right-btn-one-two-three'/>
+            <GoTriangleRight onClick={nextSlide} className='right-btn'/>
      
         </div>
   

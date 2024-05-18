@@ -30,9 +30,9 @@ const About = () =>{
             </div>
             <div className="about-container">
                 <div className="about-img">
-                    <img className='img-about-container' data-aos="fade-right" src={author} alt='author' />
+                    <img className='img-about-container' src={author} alt='author'data-aos="fade-right" />
                 </div>
-                <div className="about-par" data-aos="fade-left">
+                <div className="about-par"data-aos="fade-left" >
                     <p > Я нутрициолог, специалист по питанию и сертифицированный тренер по аутоиммунному протоколу.</p>
                     <p >Еще со<strong><span className='span-color'> школы  интересуюсь химией и биологией, получила высшее биологическое образование</span></strong> и, наконец, нашла себя в прикладной сфере – нутрициологии.</p>
                     <p >Мои знания<strong><span className='span-color'> основаны не только на теоретической части</span></strong> в области биохимии и физиологии, но и на личном опыте управления аутоиммунным заболеванием.</p>
@@ -49,8 +49,8 @@ const About = () =>{
                
 
             </div>
-            <div className='my-work-about'  data-aos="fade-out" >
-                <div>
+            <div className='my-work-about'   >
+                <div >
                 <h2>Чаще всего ко мне обращаются с проблемами</h2>
                 </div>
                 <div className='section-about-one'>
