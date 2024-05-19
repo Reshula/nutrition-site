@@ -3,6 +3,7 @@ import { useState , useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { AiOutlineBars } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import './NavBar.css';
 import logo from '../Assets/logo_avocado.png'
 
@@ -30,14 +31,14 @@ const NavBar = () => {
     <nav className="navbar">
     
        
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <AiOutlineBars />
-        </div>
-       
+    <div className="menu-icon" onClick={handleShowNavbar}>
+          <span className="toggle-icon">{showNavbar ?  <AiOutlineClose /> : <AiOutlineBars />}</span>
+    </div>
+    
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
-        
+      
           <ul className='ul-nav'>
-        
+         
             <li>
             <NavLink to="/"> <img className='logo-nav' src={logo}alt='logo'/></NavLink>
             </li>

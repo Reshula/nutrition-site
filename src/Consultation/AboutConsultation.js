@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from '../redux/cartSlice';
 // import { consultationDescriptions } '../Data/dataConsultation';
-// import ConsultationItem from './ConsultationItem';
+import ConsultationItem from './ConsultationItem';
 
 
 const AboutConsultation = () =>{
@@ -36,9 +36,8 @@ return(
                 {/* {consultationDescriptions.map(description =>
                  <ConsultationItem 
                  key={description.id}
-                 describtineOne={description.describtionOne}
-                 describtineTwo={description.describtionTwo}
-                 describtineThree={description.describtionThree}/>)} */}
+                 description={description}
+                 />)} */}
                          
                           
 

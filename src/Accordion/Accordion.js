@@ -1,5 +1,5 @@
 import { list } from "./List";
-import  AcordionItem from './AccordionItem';
+import AccordionItem from "./AccordionItem";
 import './Accordion.css'
 
 export const Accordion =() => {
@@ -8,7 +8,7 @@ export const Accordion =() => {
         <h3 className='title-accordion '>Ответы на вопросы :</h3>
         <div className='accordion-container'>
         {list.map((item, index) =>
-        < AcordionItem key={index} title={item.title} content={item.content}/>
+        < AccordionItem key={index} title={item.title} content={item.content} />
         
         )}
         </div>

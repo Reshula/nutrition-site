@@ -1,6 +1,8 @@
-import { useState } from "react"
+import { useState } from "react";
+import { AiOutlinePlusCircle } from "react-icons/ai";
+import { AiOutlineMinusCircle } from "react-icons/ai";
 
- const AcordionItem = ({title, content}) =>{
+ const AccordionItem = ({title, content}) =>{
 
     const [isOpen, setIsOpen] = useState(false);
     const handleIsOpen = () => {
@@ -8,11 +10,16 @@ import { useState } from "react"
     }
 
     return(<div className='accordion-div'>
-        <div className={isOpen ? 'activeAccord' : 'default'} onClick={handleIsOpen}>
-            {title}
+       
+        <div className={`accordion-header ${isOpen ? 'activeAccord' : 'default'}`}onClick={handleIsOpen}>
+      
+            <strong><span>{title}</span></strong>
+            <span className="toggle-icon">{isOpen ? <AiOutlineMinusCircle /> : <AiOutlinePlusCircle />}</span>
+           
         </div>
         {
-            isOpen && <div className='content'>
+            isOpen &&
+            <div className='content'>
             {content}
 
             </div>
@@ -20,4 +27,4 @@ import { useState } from "react"
       
   </div>)
 }
-export default AcordionItem;
+export default AccordionItem;

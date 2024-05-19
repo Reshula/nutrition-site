@@ -77,7 +77,7 @@
 export const freeMaterial = [
     {
         id:1,
-        img:'cabage',
+        img:'cabege',
         name:'АИП замены',
     },
     {

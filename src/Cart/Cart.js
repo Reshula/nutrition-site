@@ -7,6 +7,10 @@ const Cart = () =>{
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice)
 
+   
+
+    console.log('Total Price:', totalPrice);
+
     return(
         <section id='cart_section'>
         <div className='cart-container'>
@@ -14,8 +18,10 @@ const Cart = () =>{
             <h3 className='cart-title'>Ваши Программы</h3>
            
                 <h3 className="totalPrice">{totalPrice === 0 ? 'Вы ничего не выбрали' 
-                    : `Total: $ ${totalPrice.toFixed(2)}`}</h3>
-                    {cartItems.map((cartItem, id )=> <CartItem key={id} cartItem={cartItem}/>)}    
+                    : `Общая сумма: ${totalPrice.toFixed(2)} azn`}</h3>
+                    {cartItems.map((cartItem, id )=> (
+                    <CartItem key={id} cartItem={cartItem}/>
+                    ))}    
             </div>
             <div className='icon-cart'>
                 {totalPrice === 0 && <ContinueShopping /> }

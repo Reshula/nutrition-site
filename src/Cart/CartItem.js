@@ -7,20 +7,19 @@ import trash from '../Assets/trash--v1.png'
 const CartItem = ({cartItem}) =>{
     
     const prog = data.find(item => item.id === cartItem.progId);
-
     const dispatch = useDispatch();
 
     return(
        
         <div className="cartItem-container">
             <div>
-               <img className="cartItem-img" src={`./${prog.image}.jpg` } width="100px" alt ="food"/>
+               <img className="cartItem-img" src={`./${prog.image}.jpg` } alt ="food"/>
             </div>
             <div className="cartItem-block1">
 
                <p> <strong>{prog.describe}</strong></p>
-               <p> Price: $ {prog.price * cartItem.quantity}</p>
-               <p> {cartItem.quantity} item(s)</p>
+               <p> Цена:  {prog.price * cartItem.quantity} azn</p>
+               <p> Кол-во: {cartItem.quantity} шт</p>
                <span onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}>
                <img className='trash-icon' src={trash} alt="icon" width="10px"/>
                </span>

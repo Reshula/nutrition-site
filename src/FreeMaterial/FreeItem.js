@@ -1,8 +1,10 @@
- const FreeItem = ({name}) =>{
+
+
+ const FreeItem = ({item}) =>{
     return(<div >
         <div>
-         <img src={`../${name.img}.jpg`} alt='item'/>
-        <p><strong>{name}</strong></p>
+         <img src={`../${item.img}.jpg`} alt='item'/>
+        <p><strong>{item.name}</strong></p>
         </div>
 
     </div>)

@@ -1,16 +1,16 @@
 import { data } from '../Data/data';
 import { useParams, useNavigate } from "react-router-dom";
-import './Program.css';
 import { addItemToCart } from '../redux/cartSlice';
-
 import { useDispatch } from "react-redux";
 // import ChangeQuantity from '../Cart/ChnageQuantity';
+import { useState } from 'react';
+import './Program.css';
 
 const AboutProduct = () =>{
     const navigate = useNavigate();
     const { name } = useParams()
     const dispatch = useDispatch();
-    // const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(1);
 
 
 
@@ -27,7 +27,7 @@ return(
                         </div>
                           <div className='rigth-container-box'>
                             <h3 className='rigth-container-title'>{elem.describe}</h3>
-                            <p className='rigth-container-par'>{elem.price} <stron>azn</stron></p>
+                            <p className='rigth-container-par'>{elem.price} <strong>azn</strong></p>
                             <p className='rigth-container-par'>{elem.title}</p>
                             <p className='rigth-container-par'>{elem.titleOne}</p>
                             <div className='div-btn'>
@@ -39,6 +39,7 @@ return(
                                             id: elem.id,
                                             img: elem.image,
                                             price: elem.price,
+                                            quantity
                                         })
                                     )
                                    }

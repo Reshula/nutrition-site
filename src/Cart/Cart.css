@@ -30,7 +30,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-  }
+}
+.cartItem-img{
+  width: 420px;
+}
 .trash-icon{
     width: 20px;
 }  
@@ -75,4 +78,14 @@
     .add-remove-block{
       margin-left: 0;
     }
+   
+  }
+  @media all and (max-width:500px){
+    .cartItem-img{
+      width: 200px;
+    }
+    .cartItem-container{
+      margin-left: 5px;
+    }
+
   }

@@ -6,9 +6,9 @@ const ConsultationItem = ({describtion}) =>{
             <p>{describtion.describtionOne}</p>
             <p>{describtion.describtionTwo}</p>
             <p>{describtion.describtionThree}</p>
-               
-                                
-                       
+
+            
+                          
         </div>
     )
 

@@ -27,8 +27,8 @@
 
 .menu-icon {
   display: none;
-  color:#008f4e;
-  font-size: 25px;
+  
+
   
 
 }
@@ -36,9 +36,10 @@
 
 .nav-elements ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   list-style-type: none;
   margin-bottom: 5px;
+  margin-right: 20px;
 }
 
 .nav-elements ul li:not(:last-child) {
@@ -76,17 +77,13 @@
     justify-content: space-between;
   }
 
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-   
-  }
+ 
 
 
   .nav-elements {
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 0px;
     background-color:#fafaed;
     width: 0px;
     height: calc(100vh - 60px);
@@ -95,7 +92,7 @@
   }
 
   .nav-elements.active {
-    width: 200px;
+    width: 300px;
   }
 
   .nav-elements ul {
@@ -104,17 +101,24 @@
   }
 
   .nav-elements ul li {
-    margin-right: unset;
+    margin-left: unset;
     margin-top: 10px;
+  }
+  .menu-icon {
+    display: block;
   }
 }
 
 
-
+.toggle-icon{
+  font-size: 30px;
+  color:#008f4e;
+  cursor: pointer;
+  
+}
 
 .fixed {
   background-color: #fafaed;
-
   width: 100%;
   left: 0;
   position: fixed;

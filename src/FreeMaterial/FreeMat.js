@@ -23,7 +23,7 @@ const FreeMat = () =>{
             <div className='free-mat-container' >
             
                 {freeMaterial.map((item, id) =>
-                <FreeItem  key={id} name={item.name}/>
+                <FreeItem  key={item.id} item={item}/>
             )}
             </div>
 
