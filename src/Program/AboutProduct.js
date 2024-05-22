@@ -2,7 +2,7 @@ import { data } from '../Data/data';
 import { useParams, useNavigate } from "react-router-dom";
 import { addItemToCart } from '../redux/cartSlice';
 import { useDispatch } from "react-redux";
-// import ChangeQuantity from '../Cart/ChnageQuantity';
+import ChangeQuantity from '../Cart/ChnageQuantity';
 import { useState } from 'react';
 import './Program.css';
 
@@ -31,7 +31,7 @@ return(
                             <p className='rigth-container-par'>{elem.title}</p>
                             <p className='rigth-container-par'>{elem.titleOne}</p>
                             <div className='div-btn'>
-                                {/* <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/> */}
+                                <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
                             <button className='btn-to-buy'
                                    onClick= {() =>{
                                     dispatch(

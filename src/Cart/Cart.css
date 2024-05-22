@@ -52,17 +52,23 @@
     background-color: #4aae81;
     scale: 1.02;
   }
+
   .add-remove-block{
-    margin-left: 100px;
+    display: flex;
+ 
+  }
+  .add-remove-quantity{
+    font-size: 30px;
+    margin-top: 15px;
   }
   .add-item, .remove-item{
-    background-color: #6bc9c8;
+    background-color: #acedc4;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     border: none;
-    color: #ee8699;
-    font-size: 30px;
+    color: #008f4e;
+    font-size: 20px;
   }
   
   .add-item:hover, .remove-item:hover{
@@ -75,9 +81,7 @@
     .totalPrice{
         font-size: 30px;
     }
-    .add-remove-block{
-      margin-left: 0;
-    }
+
    
   }
   @media all and (max-width:500px){
