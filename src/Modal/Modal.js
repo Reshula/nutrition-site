@@ -6,7 +6,7 @@ const Modal = ( {setIsOpen, children} ) =>{
             setIsOpen(false)
         }
     }
-
+   
 
     return(
         <div className='modal'>
@@ -14,8 +14,10 @@ const Modal = ( {setIsOpen, children} ) =>{
                 {children}
 
             </div>
+          
 
-        </div>
+
+    </div>
     )
 }
 export default Modal

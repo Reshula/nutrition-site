@@ -30,7 +30,7 @@ const About = () =>{
             </div>
             <div className="about-container">
                 <div className="about-img">
-                    <img className='img-about-container' src={author} alt='author'data-aos="fade-right" />
+                    <img className='img-about-container' src={author} alt='author' data-aos="fade-right"/>
                 </div>
                 <div className="about-par"data-aos="fade-left" >
                     <p > Я нутрициолог, специалист по питанию и сертифицированный тренер по аутоиммунному протоколу.</p>
@@ -54,19 +54,19 @@ const About = () =>{
                 <h2>Чаще всего ко мне обращаются с проблемами</h2>
                 </div>
                 <div className='section-about-one'>
-                    <div className='section-par-about'data-aos="fade-up">
+                    <div className='section-par-about'>
                         <img className='section-about-avacado' src={avacado} alt='avacado' />
                         <p>Любые дисфункции щитовидной железы (АИТ, гипотиреоз, болезнь Грейвса)</p>
                     </div>
-                    <div className='section-par-about'data-aos="fade-up">
+                    <div className='section-par-about'>
                         <img className='section-about-avacado'src={avacado} alt='avacado'/>
                         <p>Другие аутоиммунные заболевания</p>
                     </div>
-                    <div className='section-par-about'data-aos="fade-up">
+                    <div className='section-par-about'>
                        <img className='section-about-avacado' src={avacado} alt='avacado'/>
                        <p>«Женские» гормональные дисбалансы (СПКЯ, эндометриоз, ПМС, проблемы с циклом)</p>
                     </div>
-                    <div className='section-par-about'data-aos="fade-up">
+                    <div className='section-par-about'>
                         <img className='section-about-avacado'src={avacado} alt='avacado'/>
                         <p>Работа с ЖКТ (СИБР, ГЭРБ, СРК, желчеотток и т.д.)</p>
                     </div>

@@ -24,7 +24,7 @@
     width: 50%;
     height: 50%;
    
-    /* margin-top: 100px; */
+  
    
     }
 
@@ -34,13 +34,12 @@
     .slider {
         position: relative;
         width: 100%;
-        /* max-width: 600px; */
-        margin:auto;
+        margin-left:auto;
         overflow: hidden;
     }
     
     .slide-img {
-        width: 700px;
+        width: 500px;
         display: block;
     }
     
@@ -69,7 +68,8 @@
 
     }
     .close-btn{
-        color:#008f4e;
+        color:#ffffff;
+        font-size: 100px;
     }
 
     @media all and (max-width:500px){
@@ -79,4 +79,113 @@
         }
    
     }
+    /* FORM */
+    .form-container{
+        background-color: #ffffff;
     
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textarea{
+        padding-bottom: 100px;
+    }
+    .request{
+        text-align: center;
+    }
+    .form-img{
+        width: 500px;
+        height: 200px;
+    }
+    #name,#email,#tel,#message{
+        border:1px solid rgb(149, 147, 147);
+        margin:10px;
+        border-radius: 3px;
+    }
+    .submit-par{
+        text-align: center;
+    }
+    .submit-btn{
+     
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 15px;
+        background-color:#008f4e ;
+        color: #fafaed;
+        border: none;
+        border-radius:10px ;
+        font-size: 20px;
+    }
+    .submit-btn:hover{
+        top:2px;
+        scale: 1.02;
+        background-color:#fafaed;
+        color: #008f4e ;
+        border: 1px solid #008f4e ;
+    }
+
+
+.modal-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .overlay-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 80%;
+    width: 90%;
+    max-width: 500px;
+    overflow-y: auto;
+    z-index: 1001;
+  }
+  
+  .modal-body {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+  .modal-body::-webkit-scrollbar {
+    width: 0; 
+    display: none;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  @media all and (max-width:500px){
+    .modal-content{
+        max-width: 380px;
+
+    }
+
+  }
+  

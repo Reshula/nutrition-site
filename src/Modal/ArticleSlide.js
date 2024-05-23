@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-
 import { GoTriangleRight } from "react-icons/go";
 import { GoTriangleLeft } from "react-icons/go";
 

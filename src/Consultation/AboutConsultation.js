@@ -1,7 +1,9 @@
 import { dataConsultation } from '../Data/dataConsultation';
 import { useParams, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { addItemToCart } from '../redux/cartSlice';
+import { useState } from 'react';
+import ModalForm from '../Modal/ModalForm';
+import Form from '../Modal/Form';
+import { FaArrowLeft } from "react-icons/fa";
 // import { consultationDescriptions } '../Data/dataConsultation';
 // import ConsultationItem from './ConsultationItem';
 
@@ -9,7 +11,7 @@ import { addItemToCart } from '../redux/cartSlice';
 const AboutConsultation = () =>{
     const navigate = useNavigate();
     const { titleC } = useParams()
-    const dispatch = useDispatch();
+    const [isOpen, setIsOpen ] = useState(false)
 
 
 
@@ -43,19 +45,16 @@ return(
 
                             <div className='div-btn'>
                             <button className='btn-to-buy'
-                                   onClick= {() =>{
-                                    dispatch(
-                                        addItemToCart({
-                                            id: elem.id,
-                                            img: elem.img,
-                                            price: elem.price,
-                                        })
-                                    )
-                                   }
-                                   }
-                              >Заявка
-                               </button>
-                            <button className="btn-go-back" onClick={() => navigate(-1)}>Назад </button>
+                           
+                                onClick={() => setIsOpen(true)} >Заявка</button>
+                                {isOpen && 
+                                <ModalForm setIsOpen={setIsOpen}>
+                                <Form setIsOpen={setIsOpen} />
+                                </ModalForm>    
+                                }
+                              
+                           
+                            <button className="btn-go-back" onClick={() => navigate(-1)}><FaArrowLeft />  </button>
                             </div>
                         </div>
                     </div>
