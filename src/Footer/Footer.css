@@ -1,0 +1,48 @@
+.footer {
+    background-color:#fafaed;
+   
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;   
+ }
+
+.footer h3 {
+    color: #008f4e;
+    font-size: 18px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 15px;
+}
+
+.social-icons {
+    list-style-type: none;
+    font-size: 30px;
+  
+}
+
+
+
+.footer-img{
+    width: 80px;
+}
+
+
+.bottom-footer p{
+    color: #333;
+}
+
+
+.footer-list{
+    list-style: none;
+  
+}
+.footer-list:hover{
+    color: #008f4e;
+    cursor: pointer;
+}
+

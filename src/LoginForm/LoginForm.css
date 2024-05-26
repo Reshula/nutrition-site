@@ -1,0 +1,100 @@
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 80%;
+    width: 30%;
+    margin:30px 400px 10px ;
+    overflow-y: auto;
+    z-index: 1001;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 410px;
+    padding: 35px 35px 40px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ 
+}
+.wrapper h1{
+    font-size: 30px;
+    text-align: center;
+    color: #008f4e;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: center;
+}
+.form-sup-text {
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    color: #5f5f5f;
+}
+
+.img-form{
+    width: 150px;
+}
+input{
+    width: 90%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: #000;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.create-account-btn{
+    position: relative;
+    width: 100%;
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+.wrapper .par-account ,.a-log-in, .a-sign-up {
+    color: #008f4e;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+.a-log-in:hover,.a-sign-up:hover{
+    text-decoration: underline;
+}
+
+
+@media all and (max-width:800px){
+    .wrapper{
+        width: 100%;
+        margin-left: 150px;
+    
+    }
+}
+@media all and (max-width:500px){
+    .wrapper{
+        margin-left: 5px;
+        max-width: 350px;
+    }
+}

@@ -1,9 +1,13 @@
 
 import './FreeMat.css';
 import FreeItem from './FreeItem';
-import { freeMaterial } from '../Data/data'
+import { freeMaterial } from '../Data/data';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const FreeMat = () =>{
+    const openNewWindow = () => {
+        window.open('http://localhost:3000/freeMat_section/loginForm_section', '_blank');
+      };
 
     return(
         <section id='freeMat_section'>
@@ -29,9 +33,16 @@ const FreeMat = () =>{
 
           
    
-  <div>
-                <button className="sing-up-btn">Зарегистрироваться в личном кабинете </button>
-            </div>
+            
+                {/* <nav>
+                    <Link to='loginForm_section'>
+                       
+                    </Link>
+                </nav> */}
+                <div>
+                <button onClick={openNewWindow} className="sing-up-btn">Зарегистрироваться в личном кабинете </button>
+                </div>
+            
         </section>
     )
 }

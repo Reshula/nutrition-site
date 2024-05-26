@@ -7,9 +7,6 @@ const Cart = () =>{
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice)
 
-   
-
-    console.log('Total Price:', totalPrice);
 
     return(
         <section id='cart_section'>

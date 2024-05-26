@@ -1,15 +1,24 @@
-* body{
+
+html, body {
   margin: 0;
   height: 100%;
-
   background-image: url('./Assets/photo.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
   font-family: 'Courier New', Courier, monospace;
-  /* -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px); */
-  
- }
+}
+
+.main-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.main-content {
+  flex: 1 1 auto;
+}
+
+

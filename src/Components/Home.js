@@ -5,10 +5,11 @@ import prog from '../Assets/Depositphotos_174531.jpg';
 import consultation from '../Assets/photo (1).jpg';
 import material from '../Assets/corn.jpg';
 import About from '../About/About';
-import FreeMat from '../FreeMaterial/FreeMat'
+import FreeMat from '../FreeMaterial/FreeMat';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Accordion } from '../Accordion/Accordion';
 import { TypeAnimation } from 'react-type-animation';
+
 
 const Home = () =>{
     return(
@@ -40,9 +41,9 @@ const Home = () =>{
                     </li>
                     <li>
                     подберу <strong><span className='span-color'>индивидуальный план</span></strong> питания
-                    <li>
+                    
                     дам поддержку и мотивацию
-                    </li>
+                    
                     </li>
                     <div className='type'>
             <TypeAnimation 
@@ -53,8 +54,8 @@ const Home = () =>{
             style={{ fontSize: '2em' }}
             repeat={Infinity}
             />
-        </div>
-                </ul>
+            </div>
+            </ul>
 
             </div>
             </div>
@@ -69,9 +70,9 @@ const Home = () =>{
             </div>
             <div className='bottom-container'>
                 <nav>
-                <Link to='/consultation_section'>
-                <button className='glow-on-hover'>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
-                </Link>
+                    <Link to='/consultation_section'>
+                    <button className='glow-on-hover'>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+                    </Link>
                 </nav>
                 <img className='badge-conatiner' src={badge} alt='badge'/>
                 </div>
@@ -80,30 +81,30 @@ const Home = () =>{
                     <nav>
                     <Link to='/program_section'>
                         <img className='img-program' src={prog} alt='fruit'/>
-                      </Link>
+                    </Link>
                     </nav>
-                      <div class="middle">
-    <div class="text">ПРОГРАММЫ</div>
+                      <div className="middle">
+    <div className="text">ПРОГРАММЫ</div>
   </div>
                     </div>
                     <div className='box'>
                     <nav>
-                      <Link to='/consultation_section'>
+                    <Link to='/consultation_section'>
                         <img className='img-program' src={consultation} alt='fruit'/>
-                      </Link>
+                    </Link>
                     </nav>
-                      <div class="middle">
-    <div class="text">КОНСУЛЬТАЦИИ</div>
+                      <div className="middle">
+    <div className="text">КОНСУЛЬТАЦИИ</div>
   </div>
                     </div>
                     <div className='box'>
                         <nav>
-                            <Link to='/freeMat_section'>
+                          <Link to='/freeMat_section'>
                           <img className='img-program' src={material} alt='fruit' width='300px' />
                           </Link>
                       </nav>
-                      <div class="middle">
-    <div class="text">БЕСПЛАТНЫЕ МАТЕРИАЛЫ</div>
+                      <div className="middle">
+    <div className="text">БЕСПЛАТНЫЕ МАТЕРИАЛЫ</div>
   </div>
                     </div>
            
@@ -114,7 +115,9 @@ const Home = () =>{
 
 <About/>
 <FreeMat />
+
 <Accordion/>
+
         </div>
         </section>
     )
