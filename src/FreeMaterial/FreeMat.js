@@ -1,13 +1,17 @@
 import './FreeMat.css';
 import FreeItem from './FreeItem';
 import { freeMaterial } from '../Data/data';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const FreeMat = () =>{
   
-      const openNewWindow = () => {
-        const baseUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
-        window.open(`${baseUrl}/freeMat_section/loginForm_section`, '_blank');
-    };
+    //   const openNewWindow = () => {
+    //     const baseUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
+    //     window.open(`${baseUrl}/freeMat_section/loginForm_section`, '_blank');
+
+    //     console.log('Base URL:', process.env.REACT_APP_BASE_URL);
+    //onClick={openNewWindow}
+    // };
 
     return(
         <section id='freeMat_section'>
@@ -33,14 +37,15 @@ const FreeMat = () =>{
 
           
    
-            
-                {/* <nav>
+            <div>
+                <nav>
                     <Link to='loginForm_section'>
+                    <button  className="sing-up-btn">Зарегистрироваться в личном кабинете </button>
                        
                     </Link>
-                </nav> */}
-                <div>
-                <button onClick={openNewWindow} className="sing-up-btn">Зарегистрироваться в личном кабинете </button>
+                </nav> 
+                
+                
                 </div>
             
         </section>
