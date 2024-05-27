@@ -2,7 +2,7 @@
 import author from '../Assets/Olesa.jpg';
 import avacado from '../Assets/avocado_4.png';
 import leaf from '../Assets/leaf.png';
-import avacadoOne from '../Assets/yellowavacado.jpg';
+import avocadoOne from '../Assets/yellowavocado.jpg';
 import './About.css';
 import { useState, useEffect } from 'react';
 import Modal from '../Modal/Modal';
@@ -115,7 +115,7 @@ const About = () =>{
                 <div className='section-about-three'>
                     <h2 className='section-par-three'>Если вы питаетесь правильно, то лекарства вам не нужны.</h2>
                     <h2 className='section-par-three'>Если вы питаетесь неправильно, лекарства вам не помогут.</h2>
-                    <img className='img-about-three' data-aos="zoom-in" src={avacadoOne} alt='avacado'/>
+                    <img className='img-about-three' data-aos="zoom-in" src={avocadoOne} alt='avocado'/>
                 </div>
                 </div>
 </div>

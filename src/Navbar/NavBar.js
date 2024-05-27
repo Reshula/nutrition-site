@@ -1,7 +1,5 @@
-// 
 import { useState , useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-
 import { AiOutlineBars } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import './NavBar.css';

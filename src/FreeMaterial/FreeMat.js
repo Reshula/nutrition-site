@@ -1,13 +1,13 @@
-
 import './FreeMat.css';
 import FreeItem from './FreeItem';
 import { freeMaterial } from '../Data/data';
-import { HashLink as Link } from 'react-router-hash-link';
 
 const FreeMat = () =>{
-    const openNewWindow = () => {
-        window.open('http://localhost:3000/freeMat_section/loginForm_section', '_blank');
-      };
+  
+      const openNewWindow = () => {
+        const baseUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
+        window.open(`${baseUrl}/freeMat_section/loginForm_section`, '_blank');
+    };
 
     return(
         <section id='freeMat_section'>

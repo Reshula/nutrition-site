@@ -115,7 +115,6 @@ const Home = () =>{
 
 <About/>
 <FreeMat />
-
 <Accordion/>
 
         </div>

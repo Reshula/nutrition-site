@@ -28,9 +28,6 @@
 .menu-icon {
   display: none;
   
-
-  
-
 }
 
 
@@ -71,13 +68,10 @@
 
 
 
-
 @media all and (max-width: 500px) {
   .container{
     justify-content: space-between;
   }
-
- 
 
 
   .nav-elements {
