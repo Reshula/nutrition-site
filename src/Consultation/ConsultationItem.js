@@ -1,15 +1,9 @@
-const ConsultationItem = ({id, description}) =>{
+const ConsultationItem = ({ description}) =>{
 
     return (
-        <div key={id}>
+        <div >
          
-             <p>{description.descriptionOne}</p>
-            <p>{description.descriptionTwo}</p>
-            <p>{description.descriptionThree}</p> 
-   
-
-            
-                          
+             <p>{description}</p>             
         </div>
     )
 

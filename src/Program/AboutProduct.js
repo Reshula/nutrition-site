@@ -26,7 +26,7 @@ return(
                         alt='food' />
                         </div>
                           <div className='rigth-container-box'>
-                            <h3 className='rigth-container-title'>{elem.describe}</h3>
+                            <h3 className='rigth-container-title'>{elem.descripe}</h3>
                             <p className='rigth-container-par'>{elem.price} <strong>azn</strong></p>
                             <p className='rigth-container-par'>{elem.title}</p>
                             <p className='rigth-container-par'>{elem.titleOne}</p>

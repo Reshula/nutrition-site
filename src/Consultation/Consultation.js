@@ -1,6 +1,7 @@
 import { dataConsultation } from '../Data/dataConsultation'
 import ConsultationMap from './ConsultationMap';
-import './Consultation.css'
+import './Consultation.css';
+
 
 const Consultation = () =>{
     return(
@@ -15,6 +16,8 @@ const Consultation = () =>{
             <div className='consultation-container'>
            
                 {dataConsultation.map(consult => <ConsultationMap key={consult.id} consult={consult}/>)}
+
+              
                
             </div>
         </div>

@@ -1,6 +1,4 @@
-
-
- const FreeItem = ({item}) =>{
+const FreeItem = ({item}) =>{
     return(<div >
         <div>
          <img src={`../${item.img}.jpg`} alt='item'/>
