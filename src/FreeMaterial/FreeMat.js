@@ -5,14 +5,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const FreeMat = () =>{
   
-    //   const openNewWindow = () => {
-    //     const baseUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
-    //     window.open(`${baseUrl}/freeMat_section/loginForm_section`, '_blank');
-
-    //     console.log('Base URL:', process.env.REACT_APP_BASE_URL);
-    //onClick={openNewWindow}
-    // };
-
     return(
         <section id='freeMat_section'>
              <div>
@@ -30,7 +22,7 @@ const FreeMat = () =>{
             </div>
             <div className='free-mat-container' >
             
-                {freeMaterial.map((item, id) =>
+                {freeMaterial.map((item) =>
                 <FreeItem  key={item.id} item={item}/>
             )}
             </div>

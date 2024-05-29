@@ -39,7 +39,7 @@ const About = () =>{
                     <p >У меня нет<strong><span className='span-color'> единого протокола питания </span></strong>или нутрицевтиков для каждого состояния. Все это я буду подбирать индивидуально, исходя из особенностей и состояния конкретного человека.</p>
                     <p className='par' ><strong><span className='span-color'>Я не врач,</span></strong> не назначаю и не отменяю лекарственные препараты, не ставлю диагнозы. Но я знаю, как значительно улучшить качество жизни, замедлить развитие или обернуть вспять хроническое заболевание путем изменения питания и образа жизни. Не допустить появления сопутствующих проблем.</p>
                     
-                    <button onClick={() => setIsOpen(true)} className='button'>Мои статьи</button>
+                    <button onClick={() => setIsOpen(true)} className='button'>Мои сертификаты</button>
                     {isOpen && <Modal setIsOpen={setIsOpen}>
                     <Content setIsOpen={setIsOpen} dataArticle={dataArticle}/>
                     </Modal>    

@@ -94,7 +94,7 @@
 }
 @media all and (max-width:500px){
     .wrapper{
-        margin-left: 5px;
-        max-width: 350px;
+        margin-left: 10px;
+        max-width: 300px;
     }
 }

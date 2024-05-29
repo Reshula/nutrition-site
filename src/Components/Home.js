@@ -5,7 +5,6 @@ import prog from '../Assets/Depositphotos_174531.jpg';
 import consultation from '../Assets/photo (1).jpg';
 import material from '../Assets/corn.jpg';
 import About from '../About/About';
-import FreeMat from '../FreeMaterial/FreeMat';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Accordion } from '../Accordion/Accordion';
 import { TypeAnimation } from 'react-type-animation';
@@ -23,9 +22,9 @@ const Home = () =>{
             <div className='rigth-container'>
             <div className='title-container'>
             <div className="title">
-                <h1>НУТРИЦИОЛОГ,</h1>
-                <h1>КОНСУЛЬТАНТ ПО ПИТАНИЮ</h1>
-                <h1>И ЗДОРОВОМУ ОБРАЗУ ЖИЗНИ</h1>
+                <h1>НУТРИЦИОЛОГ, <br></br>
+                КОНСУЛЬТАНТ ПО ПИТАНИЮ<br></br>
+                И ЗДОРОВОМУ ОБРАЗУ ЖИЗНИ</h1>
             </div>
        
             <div className='par-container'>
@@ -56,7 +55,6 @@ const Home = () =>{
             />
             </div>
             </ul>
-
             </div>
             </div>
             </div>
@@ -114,7 +112,6 @@ const Home = () =>{
         </div>
 
 <About/>
-<FreeMat />
 <Accordion/>
 
         </div>

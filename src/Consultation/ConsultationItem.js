@@ -1,11 +1,12 @@
-const ConsultationItem = ({describtion}) =>{
+const ConsultationItem = ({id, description}) =>{
 
     return (
-        <div>
+        <div key={id}>
          
-            <p>{describtion.describtionOne}</p>
-            <p>{describtion.describtionTwo}</p>
-            <p>{describtion.describtionThree}</p>
+             <p>{description.descriptionOne}</p>
+            <p>{description.descriptionTwo}</p>
+            <p>{description.descriptionThree}</p> 
+   
 
             
                           
