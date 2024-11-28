@@ -10,6 +10,7 @@ import Content from '../Modal/Content';
 import { dataArticle } from '../Data/data';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { contentData , sectionContent} from './data';
 
 const About = () =>{
 
@@ -45,71 +46,36 @@ const About = () =>{
                     </Modal>    
                     }
                 </div>
-                
-               
-
             </div>
+
+
             <div className='my-work-about'   >
                 <div >
                 <h2>Чаще всего ко мне обращаются с проблемами</h2>
                 </div>
                 <div className='section-about-one'>
-                    <div className='section-par-about'>
-                        <img className='section-about-avacado' src={avacado} alt='avacado' />
-                        <p>Любые дисфункции щитовидной железы (АИТ, гипотиреоз, болезнь Грейвса)</p>
-                    </div>
-                    <div className='section-par-about'>
-                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
-                        <p>Другие аутоиммунные заболевания</p>
-                    </div>
-                    <div className='section-par-about'>
-                       <img className='section-about-avacado' src={avacado} alt='avacado'/>
-                       <p>«Женские» гормональные дисбалансы (СПКЯ, эндометриоз, ПМС, проблемы с циклом)</p>
-                    </div>
-                    <div className='section-par-about'>
-                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
-                        <p>Работа с ЖКТ (СИБР, ГЭРБ, СРК, желчеотток и т.д.)</p>
-                    </div>
-                    <div className='section-par-about'data-aos="fade-up">
-                         <img className='section-about-avacado'src={avacado} alt='avacado'/>
-                         <p>Метаболический синдром, инсулинорезистентность, коррекция веса</p>
-                    </div>
-                    <div className='section-par-about'data-aos="fade-up">
-                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
-                        <p>Подготовка к беременности и восстановление организма после родов</p>
-                    </div>
-                    <div className='section-par-about'data-aos="fade-up">
-                    <img className='section-about-avacado'src={avacado} alt='avacado'/>
-                    <p>Неудовлетворительное состояние кожи, волос, ногтей</p>
-                        
-                    </div>
-                    <div className='section-par-about'data-aos="fade-up">
-                        <img className='section-about-avacado'src={avacado} alt='avacado'/>
-                        <p>Подбор нутрицевтиков и расшифровка «дефицитарных» анализов (органические кислоты в моче, анализы крови)</p>
-                    </div>
-
-
-                </div>
+                       
+        {contentData.map((item) => (
+          <div
+            key={item.id}
+            className="section-par-about"
+            data-aos={item.dataAos || ''}
+          >
+            <img className="section-about-avacado" src={avacado} alt="avacado" />
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
                 <div className='section-about-div' data-aos="fade-up">
                    
                     <h2>Вопросы, с которыми я НЕ работаю</h2>
                 <div className='section-about-two'>
-                    <div className='section-par-about-two'data-aos="fade-up">
-                        <img className='section-about-two-leaf' src={leaf} alt='leaf'/>
-                        <p >Онкология</p>
-                    </div>
-                    <div className='section-par-about-two'data-aos="fade-up">
-                        <img className='section-about-two-leaf'src={leaf} alt='leaf'/>
-                        <p>Консультации детей и беременных женщин</p>
-                    </div>
-                    <div className='section-par-about-two'data-aos="fade-up">
-                        <img className='section-about-two-leaf'src={leaf} alt='leaf'/>
-                        <p>Паразитозы</p>
-                    </div>
-                    <div className='section-par-about-two'data-aos="fade-up">
-                        <img className='section-about-two-leaf' src={leaf} alt='leaf'/>
-                        <p>Обострения хронических заболеваний, требующие медицинского вмешательства</p>
-                    </div>
+                {sectionContent.map((item) => (
+        <div className="section-par-about-two" key={item.id} data-aos="fade-up">
+          <img className="section-about-two-leaf" src={leaf} alt="leaf" />
+          <p>{item.text}</p>
+        </div>
+      ))}
                 </div>
                 
                 <div className='section-about-three'>
@@ -118,16 +84,9 @@ const About = () =>{
                     <img className='img-about-three' data-aos="zoom-in" src={avocadoOne} alt='avocado'/>
                 </div>
                 </div>
+                </div>
 </div>
-        </div>
-
-
-
-
-  
-
-   
-
+       
         </section>
     )
 }

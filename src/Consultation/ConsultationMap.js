@@ -18,8 +18,8 @@ return(
         <h3>{consult.name}</h3>
         <p>{consult.shortDes}</p>
         </div>
-        <Link  to={`/consultation_section/${consult.titleC}`}>
-            <button className="btn-consult">Подробнее</button>
+        <Link className="btn-consult" to={`/consultation_section/${consult.titleC}`}>
+            Подробнее
         </Link>
 
     </div>

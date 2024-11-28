@@ -1,13 +1,11 @@
 import './Component.css';
 import avatar from '../Assets/1111.jpg';
 import badge from '../Assets/shtamp.png';
-import prog from '../Assets/Depositphotos_174531.jpg';
-import consultation from '../Assets/photo (1).jpg';
-import material from '../Assets/corn.jpg';
 import About from '../About/About';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Accordion } from '../Accordion/Accordion';
 import { TypeAnimation } from 'react-type-animation';
+import { programContent } from './data';
 
 
 const Home = () =>{
@@ -17,7 +15,6 @@ const Home = () =>{
             <div className='title-name'>
                 <h2 className='title-name'>ОЛЕСЯ ШАРАБЧИЕВА</h2>
             </div>
-        
             <div className='main-container'>
             <div className='rigth-container'>
             <div className='title-container'>
@@ -74,43 +71,24 @@ const Home = () =>{
                 </nav>
                 <img className='badge-conatiner' src={badge} alt='badge'/>
                 </div>
-                <div className='img-program-container'>
-                    <div className='box' >
-                    <nav>
-                    <Link to='/program_section'>
-                        <img className='img-program' src={prog} alt='fruit'/>
-                    </Link>
-                    </nav>
-                      <div className="middle">
-    <div className="text">ПРОГРАММЫ</div>
-  </div>
-                    </div>
-                    <div className='box'>
-                    <nav>
-                    <Link to='/consultation_section'>
-                        <img className='img-program' src={consultation} alt='fruit'/>
-                    </Link>
-                    </nav>
-                      <div className="middle">
-    <div className="text">КОНСУЛЬТАЦИИ</div>
-  </div>
-                    </div>
-                    <div className='box'>
-                        <nav>
-                          <Link to='/freeMat_section'>
-                          <img className='img-program' src={material} alt='fruit' width='300px' />
-                          </Link>
-                      </nav>
-                      <div className="middle">
-    <div className="text">БЕСПЛАТНЫЕ МАТЕРИАЛЫ</div>
-  </div>
-                    </div>
-           
-
- 
-    
+        <div className="img-program-container">
+            {programContent.map((item) => (
+        <div className="box" key={item.id}>
+            <nav>
+            <Link to={item.link}>
+              <img
+                className="img-program"
+                src={item.img}
+                alt={item.alt}
+              />
+            </Link>
+            </nav>
+          <div className="middle">
+            <div className="text">{item.text}</div>
+          </div>
         </div>
-
+      ))}
+    </div>
 <About/>
 <Accordion/>
 

@@ -43,10 +43,11 @@
     border-radius: 25px;
     background-color:#008f4e;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     padding: 15px 35px;
     cursor: pointer;
+    text-decoration: none;
   }
   .btn-cart-box:hover{
     background-color: #4aae81;

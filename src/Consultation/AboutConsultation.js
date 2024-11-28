@@ -4,8 +4,7 @@ import { useState } from 'react';
 import ModalForm from '../Modal/ModalForm';
 import Form from '../Modal/Form';
 import { FaArrowLeft } from "react-icons/fa";
-// import { consultationDescriptions } from '../Data/dataConsultation';
-// import ConsultationItem from './ConsultationItem';
+
 
 
 const AboutConsultation = () =>{
@@ -33,14 +32,6 @@ return(
                             <p>{elem.price} <strong>azn</strong></p>
                             <p>{elem.description}</p>
                       
-                     
-                {/* {consultationDescriptions.map((description) =>
-                 <ConsultationItem key={description.id} description={description.description}/>)}  */}
-
-
-                         
-                          
-
                             <div className='div-btn'>
                             <button className='btn-to-buy'
                            

@@ -16,8 +16,8 @@ const Cart = () =>{
            
                 <h3 className="totalPrice">{totalPrice === 0 ? 'Вы ничего не выбрали' 
                     : `Общая сумма: ${totalPrice.toFixed(2)} azn`}</h3>
-                    {cartItems.map((cartItem, id )=> (
-                    <CartItem key={id} cartItem={cartItem}/>
+                    {cartItems.map((cartItem )=> (
+                    <CartItem  cartItem={cartItem}/>
                     ))}    
             </div>
             <div className='icon-cart'>

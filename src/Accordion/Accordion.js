@@ -1,4 +1,4 @@
-import { list } from "./List";
+import { list } from "./list";
 import AccordionItem from "./AccordionItem";
 import './Accordion.css'
 

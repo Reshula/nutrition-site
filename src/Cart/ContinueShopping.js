@@ -1,18 +1,15 @@
-import { useNavigate } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import './Cart.css';
 
 const ContinueShopping = () => {
 
-    const navigate = useNavigate();
-    const navigateTo = () => {
-        navigate('/program_section'); 
-        }
     return(
         <div className='icon-cart'>
-            <button className='btn-cart-box' onClick={navigateTo}>
-            Продолжить ...
-            </button>
-            
+           
+        <Link className='btn-cart-box' to={'/program_section'}>
+           Продолжить ...
+        </Link>
+          
         </div>
     )
 }

@@ -35,30 +35,31 @@ const NavBar = () => {
     
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
       
-          <ul className='ul-nav'>
+        <ul className='ul-nav'>
          
-            <li>
+            <nav>
             <NavLink to="/"> <img className='logo-nav' src={logo}alt='logo'/></NavLink>
-            </li>
-            <li>
+            </nav>
+            <nav>
               <NavLink to="/program_section">Программы</NavLink>
-            </li>
+            </nav>
            
-            <li>
+            <nav>
               <NavLink to="/nutritionCal_section">Калькулятор</NavLink>
-            </li>
-            <li>
+            </nav>
+            <nav>
               <NavLink to="/consultation_section">Консультации</NavLink>
-            </li>
-            <li>
+            </nav>
+            <nav>
               <NavLink to="/about_section">Обо мне</NavLink>
-            </li>
-            <li>
+            </nav>
+            <nav>
               <NavLink to="/cart_section ">Покупки</NavLink>
              
-            </li>
+            </nav>
+            </ul>
           
-          </ul>
+         
         </div>
      
     </nav>
